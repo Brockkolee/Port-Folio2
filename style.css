@@ -1,0 +1,392 @@
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+navbar {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+navbar .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin-right: 5em;
+}
+
+navbar ul a {
+    text-decoration: none;
+    margin-left: 1em;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+navbar ul a:hover {
+    color: #6FCCE3;
+    background: #fff;
+
+}
+
+#ocean-background {
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: linear-gradient(to bottom, #bbf0f3, #f6d285);
+    height: 250vh
+}
+
+#Leave1,
+#sLeave3,
+#Leave4,
+#sLeave5 {
+    animation: turn1 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Tree2,
+#Tree4 {
+    animation: turn3 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#Tree3,
+#Tree6 {
+    animation: turn4 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#sTree2,
+#sTree4 {
+    animation: turn4 2s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#sTree3,
+#sTree6 {
+    animation: turn3 2s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#sLeave1,
+#Leave3,
+#Leave5,
+#sLeave4 {
+    animation: turn2 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Man {
+    animation: wave1 1s ease-in-out infinite alternate;
+}
+
+#sMan {
+    animation: wave2 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes turn1 {
+    from {
+        transform: rotateZ(0deg)
+    }
+
+    to {
+        transform: rotateZ(10deg)
+    }
+}
+
+@keyframes turn2 {
+    from {
+        transform: rotateZ(10deg)
+    }
+
+    to {
+        transform: rotateZ(0deg)
+    }
+}
+
+@keyframes turn3 {
+    from {
+        transform: rotateZ(5deg)
+    }
+
+    to {
+        transform: rotateZ(0deg)
+    }
+}
+
+@keyframes turn4 {
+    from {
+        transform: rotateZ(0deg)
+    }
+
+    to {
+        transform: rotateZ(5deg)
+    }
+}
+
+@keyframes wave1 {
+    from {
+        transform: rotateX(0deg)
+    }
+
+    to {
+        transform: rotateX(5deg)
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: rotateX(5deg)
+    }
+
+    to {
+        transform: rotateX(0deg)
+    }
+}
+
+.filler {
+    position: relative;
+    width: 100vw;
+    background: linear-gradient(to top, #fff, transparent);
+    z-index: 1000;
+    height: 5em;
+}
+
+.line-container {
+    padding: 1em;
+    background: #fff;
+    height: 20vh;
+}
+
+.line-container svg {
+    display: inline-block;
+}
+
+.About {
+    background: #fff;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+}
+
+.About h1 {
+    font-size: 4em;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.About p {
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+.middle {
+    background: white;
+    padding: 1em;
+}
+
+.Codes {
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 5em 0;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 20em;
+    height: 30em;
+}
+
+.info a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.videos {
+    width: 100%;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    left: -5em;
+    width: 120vw;
+    height: 50rem;
+    background: linear-gradient(to top, transparent, #fff);
+    z-index: 1;
+}
+
+.contact {
+
+    height: 110vh;
+    background: #1a2a42;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #bbf0f3;
+    margin: 0 4px;
+    border-radius: 10%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #bbf0f3,
+        0 0 100px #bbf0f3;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(150s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #f6d285;
+    box-shadow: 0 0 0 10px #ad8329,
+        0 0 50px #f6d285,
+        0 0 100px #f6d285;
+}
+
+
+@keyframes animate {
+    0% {
+        border-radius: 10%;
+        transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: translateY(5vh) scale(1) rotate(720deg);
+
+    }
+}
+
+.form-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px black;
+    padding: 2em;
+    border-radius: 0.3em;
+    margin: auto;
+    width: 35vw;
+}
+
+.form-group {
+
+    margin-top: 1em;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    font-size: 1em;
+    border-radius: 0.1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact button {
+    font-size: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    transition: .3s ease background-color;
+    border-radius: 0.5em;
+}
+
+.contact button:hover {
+    background-color: #bbf0f3;
+}
+
+.section {
+    z-index: 1;
+    position: absolute;
+    margin: 10em auto;
+    left: 0;
+    right: 0;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(158, 158, 158);
+    border-radius: 1em;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
